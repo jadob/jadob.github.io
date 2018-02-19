@@ -3,9 +3,28 @@
 <head>
     {% include head.html %}
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
 </head>
-<body>
- {{ content }}
+<body class="app">
+{% include navbar.html %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-3">
+            {% include components_sidebar.html %}
+        </div>
+        <div class="col-sm-12 col-md-9">
+            <h2 class="page-header component-name">Jadob\{{ page.component_name }}</h2>
+            {{ content }}
+        </div>
+    </div>
+</div>
+{% include footer.html %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script>
+    $(function () {
+        App.init();
+    })
+</script>
 </body>
 </html>

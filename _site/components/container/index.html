@@ -1,15 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/assets/css/github.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/vendor/iconic/font/css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/github.css"/>
+<link rel="stylesheet" href="/assets/css/page.css"/>
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Container | Jadob Framework</title>
 </head>
-<body>
- <p>EEEEEE</p>
+<body class="app">
+<nav class="container-fluid navbar">
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <span class="navbar-title">Jadob Framework</span>
+        </div>
+        <div class="col-sm-12 col-md-8 navbar-menu">
+            <a href="#" class="navbar-link">Getting Started</a>
+            <a href="#" class="navbar-link">Components</a>
+            <a href="#" class="navbar-link">Tutorials</a>
+            <a href="#" class="navbar-link">Articles</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-3">
+            <aside class="sidebar">
+    <ul class="list-unstyled">
+        <li>
+
+            <span class="section-header">
+                <span class="oi oi-caret-bottom collapse-icon-trigger"></span>
+                Components</span>
+            <ul class="section-content hidden">
+                <li><a href="/components/cache">Cache</a></li>
+                <li><a href="/components/container">Container</a></li>
+                <li><a href="/components/core">Core</a></li>
+                <li><a href="/components/database">Database</a></li>
+                <li><a href="/components/doctrine-dbal-bridge">DoctrineDBALBridge</a></li>
+                <li><a href="/components/debug">Debug</a></li>
+                <li><a href="/components/event-listener">EventListener</a></li>
+                <li><a href="/components/file">File</a></li>
+                <li><a href="/components/form">Form</a></li>
+                <li><a href="/components/logger">Logger</a></li>
+                <li><a href="/components/mvc">MVC</a></li>
+                <li><a href="/components/router">Router</a></li>
+                <li><a href="/components/schema-manager">SchemaManager</a></li>
+                <li><a href="/components/security">Security</a></li>
+                <li><a href="/components/stdlib">Stdlib</a></li>
+                <li><a href="/components/symfony-translation-bridge">SymfonyTranslationBridge</a></li>
+                <li><a href="/components/twig-bridge">Twig</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+        </div>
+        <div class="col-sm-12 col-md-9">
+            <h2 class="page-header component-name">Jadob\Container</h2>
+            <h2>Table of contents</h2>
+<ol>
+    <li><a href="#basics">Basics</a></li>
+</ol>
+
+<h3 id="basics">Basics</h3>
+<p>Simple, <a href="https://www.php-fig.org/psr/psr-11/">PSR-10</a> dependency injection container.</p>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
- <span class="nv">$container</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Container</span><span class="p">();</span></code></pre></figure>
 
+<span class="nv">$container</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Jadob\Container\Container</span><span class="p">();</span>
+
+<span class="c1">//adding new dependency
+</span><span class="nv">$container</span><span class="o">-&gt;</span><span class="na">add</span><span class="p">(</span><span class="s1">'my.service'</span><span class="p">,</span> <span class="k">new</span> <span class="nx">App\Services\MyService</span><span class="p">());</span>
+
+<span class="c1">//getting previously added stuff
+</span><span class="nv">$service</span> <span class="o">=</span> <span class="nv">$container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">'my.service'</span><span class="p">);</span>
+ </code></pre></figure>
+
+        </div>
+    </div>
+</div>
+<footer class="container footer">
+    <div class="row upper">
+        <div class="col-sm-12 col-md-4">1</div>
+        <div class="col-sm-12 col-md-4">2</div>
+        <div class="col-sm-12 col-md-4">3</div>
+    </div>
+    <div class="row lower">
+        <div class="col-sm-12">
+            <span class="pull-right">
+                Page powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://pages.github.com/" target="_blank">GitHub Pages</a><br>
+                Icons: <a href="https://useiconic.com/open" target="_blank">Iconic</a>
+            </span>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script>
+    $(function () {
+        App.init();
+    })
+</script>
 </body>
 </html>
