@@ -1,15 +1,4 @@
-<footer class="container footer">
-    <div class="row upper">
-        <div class="col-sm-12 col-md-4">1</div>
-        <div class="col-sm-12 col-md-4">2</div>
-        <div class="col-sm-12 col-md-4">3</div>
-    </div>
-    <div class="row lower">
-        <div class="col-sm-12">
-            <span class="pull-right">
-                Page powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://pages.github.com/" target="_blank">GitHub Pages</a><br>
-                Icons: <a href="https://useiconic.com/open" target="_blank">Iconic</a>
-            </span>
-        </div>
-    </div>
+<footer class="border-top col-sm-12">
+    <p>&copy; {{ site.author }} {{ 'now' | date: '%Y' }}</p>
+    <p>{% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a><span class="u-separate"></span>{% endif %}{% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">Github</a>{% endif %}</p>
 </footer>

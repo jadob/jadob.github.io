@@ -1,65 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
-<link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/assets/vendor/iconic/font/css/open-iconic-bootstrap.min.css">
-<link rel="stylesheet" href="/assets/css/github.css"/>
-<link rel="stylesheet" href="/assets/css/page.css"/>
-
-    <meta charset="UTF-8">
-    <title>Container | Jadob Framework</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Container - Jadob Framework</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/zenburn.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="app">
-<nav class="container-fluid navbar">
-    <div class="row">
-        <div class="col-sm-12 col-md-4">
-            <span class="navbar-title">Jadob Framework</span>
-        </div>
-        <div class="col-sm-12 col-md-8 navbar-menu">
-            <a href="#" class="navbar-link">Getting Started</a>
-            <a href="#" class="navbar-link">Components</a>
-            <a href="#" class="navbar-link">Tutorials</a>
-            <a href="#" class="navbar-link">Articles</a>
-        </div>
+
+<body>
+<main class="container">
+    <div class="row header ">
+        <div class="col-sm-12 border-bottom">
+    <h1><code>Jadob Framework</code></h1>
+    <p>
+        <a href="/">Home</a>
+        <span class="u-separate"></span>
+        <a href="/components">Components</a>
+        <span class="u-separate"></span>
+        <a href="/guides">Guides</a>
+        <span class="u-separate"></span>
+        <a href="/getting-started">Getting Started</a>
+    </p>
+</div>
+
     </div>
-</nav>
-
-<div class="container">
-    <div class="row">
+    <div class="row content">
         <div class="col-sm-12 col-md-3">
-            <aside class="sidebar">
-    <ul class="list-unstyled">
-        <li>
-
-            <span class="section-header">
-                <span class="oi oi-caret-bottom collapse-icon-trigger"></span>
-                Components</span>
-            <ul class="section-content hidden">
-                <li><a href="/components/cache">Cache</a></li>
-                <li><a href="/components/container">Container</a></li>
-                <li><a href="/components/core">Core</a></li>
-                <li><a href="/components/database">Database</a></li>
-                <li><a href="/components/doctrine-dbal-bridge">DoctrineDBALBridge</a></li>
-                <li><a href="/components/debug">Debug</a></li>
-                <li><a href="/components/event-listener">EventListener</a></li>
-                <li><a href="/components/file">File</a></li>
-                <li><a href="/components/form">Form</a></li>
-                <li><a href="/components/logger">Logger</a></li>
-                <li><a href="/components/mvc">MVC</a></li>
-                <li><a href="/components/router">Router</a></li>
-                <li><a href="/components/schema-manager">SchemaManager</a></li>
-                <li><a href="/components/security">Security</a></li>
-                <li><a href="/components/stdlib">Stdlib</a></li>
-                <li><a href="/components/symfony-translation-bridge">SymfonyTranslationBridge</a></li>
-                <li><a href="/components/twig-bridge">TwigBridge</a></li>
-            </ul>
-        </li>
-    </ul>
-</aside>
+    <ul>
+    <li>
+        <span class="sidebar-header">Components</span>
+        <ul>
+            
+            <li><a href="/components/cache">Cache</a></li>
+            
+            <li><a href="/components/schema-manager">SchemaManager</a></li>
+            
+            <li><a href="/components/symfony-form-bridge">SymfonyFormBridge</a></li>
+            
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="col-sm-12 col-md-9">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="border-bottom">Jadob\Container</h2>
         </div>
-        <div class="col-sm-12 col-md-9">
-            <h2 class="page-header component-name">Jadob\Container</h2>
+        <div class="col-sm-12">
             <h2>Table of contents</h2>
 <ol>
     <li><a href="#basics">Basics</a></li>
@@ -80,28 +71,22 @@
  </code></pre></figure>
 
         </div>
+
     </div>
 </div>
-<footer class="container footer">
-    <div class="row upper">
-        <div class="col-sm-12 col-md-4">1</div>
-        <div class="col-sm-12 col-md-4">2</div>
-        <div class="col-sm-12 col-md-4">3</div>
     </div>
-    <div class="row lower">
-        <div class="col-sm-12">
-            <span class="pull-right">
-                Page powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://pages.github.com/" target="_blank">GitHub Pages</a><br>
-                Icons: <a href="https://useiconic.com/open" target="_blank">Iconic</a>
-            </span>
-        </div>
-    </div>
+    <div class="row footer">
+        <footer class="border-top col-sm-12">
+    <p>&copy;  2018</p>
+    <p></p>
 </footer>
+
+    </div>
+</main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/assets/js/app.js"></script>
 <script>
     $(function () {
-        App.init();
+        $('table').addClass('table table-hovered table-bordered table-striped');
     })
 </script>
 </body>

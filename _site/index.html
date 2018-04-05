@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Slice Framework</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Slice Framework</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Jadob Framework</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/zenburn.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Documentation</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<body>
+<main class="container">
+    <div class="row header ">
+        <div class="col-sm-12 border-bottom">
+    <h1><code>Jadob Framework</code></h1>
+    <p>
+        <a href="/">Home</a>
+        <span class="u-separate"></span>
+        <a href="/components">Components</a>
+        <span class="u-separate"></span>
+        <a href="/guides">Guides</a>
+        <span class="u-separate"></span>
+        <a href="/getting-started">Getting Started</a>
+    </p>
+</div>
+
+    </div>
+    <div class="row content">
+        <div class="col-sm-12">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="jumbotron">
-                        <h1 class="display-3">Slice Framework</h1>
-                        <p class="lead">PHP5 Object-Oriented framework to kickstart your app development.</p>
-                        <hr class="my-4">
-                        <p class="lead">
-                            <a class="btn btn-dark btn-lg" href="#" role="button">Documentation</a>
-                            <a class="btn btn-dark btn-lg" href="#" role="button">Examples</a>
-                        </p>
-                    </div>
+            <h1 class="display-4">Jadob\Jadob</h1>
+            <hr class="my-4">
+            <p class="lead">PHP7 Framework Documentation</p>
+            <a class="btn btn-primary" href="/getting-started" role="button">Getting started</a>
+            <a class="btn btn-primary" target="_blank" href="https://github.com/jadob/jadob" role="button">Source
+                Code</a>
+
+        </div>
+    </div>
+</div>
+<div class="col-sm-12">
+    <h2>What is Jadob?</h2>
+    <p class="lead">Jadob is a PHP7 application framework, based on Symfony and Zend components. It comes with
+        the most important stuff needed to start developing your PHP project. Jadob uses Twig for templating and
+        Doctrine DBAL to work with databases. There is no Doctrine ORM Support available, but you can easily add it
+        using Service providers.
+    </p>
+</div>
+<div class="col-sm-12">
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="card-title">0.52.0</h2>
                 </div>
-                <div class="col-sm-12">
-                    <h2 class="display-4">Disclaimer:</h1>
-                        <div class="alert alert-danger" role="alert">
-                            This is development version for now. Do not use it on production.
-                            Use it at your own risk.
-                        </div>
-                </div>
-                <div class="col-sm-12">
-                    <h2 class="display-4">Things needed to be done before 1.0.0 release:</h1>
-                        <ol>
-                            <li>Slice\Auth</li>
-                            <li>
-                                <a href="/components/container/">Slice\Container</a>
-                            </li>
-                            <li>Slice\Core</li>
-                            <li>Slice\Form</li>
-                            <li>Slice\MVC</li>
-                            <li>Slice\Security</li>
-                            <li>Slice\Config</li>
-                            <li>Slice\Router</li>
-                            <li>Learn Jekyll</li>
-                            <li>Prepare some examples</li>
-                            <li>Create documentation with some nice layout</li>
-                        </ol>
+                <div class="card-footer text-muted">
+                    Current Version
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-    </body>
+    </div>
+</div>
+    </div>
+    <div class="row footer">
+        <footer class="border-top col-sm-12">
+    <p>&copy;  2018</p>
+    <p></p>
+</footer>
+
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('table').addClass('table table-hovered table-bordered table-striped');
+    })
+</script>
+</body>
 </html>

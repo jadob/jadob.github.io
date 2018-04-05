@@ -1,2 +1,17 @@
-title: Jadob Framework
-version: 0.28.1
+# Site settings
+title: "Jadob Framework"
+description: > 
+  PHP 7 Framework.
+baseurl: "/"
+url: "https://jadob.github.io/"
+
+permalink: /:year/:month/:title
+
+collections:
+  - components
+
+markdown: kramdown
+
+highlighter: rouge
+kramdown:
+  input: GFM

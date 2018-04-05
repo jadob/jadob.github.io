@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<section class="component-introduction border-bottom">
+    <div class="row">
+        {% for c in site.components %}
+        <div class="col-sm-12">
+            <a href="/components/{{ c.component_name }}">{{ c.title }}</a> -
+            <span class="component-description">{{ c.description }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</section>
